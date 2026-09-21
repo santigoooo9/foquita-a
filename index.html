@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Te amo foquita ❤️</title>
+  <title>Tina ♡</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
@@ -43,6 +43,40 @@
       50% { opacity: 1; transform: scale(1.3); }
     }
 
+    /* Estrellas fugaces*/
+    .shooting-star {
+      position: fixed;
+      pointer-events: none;
+      z-index: 2;
+      height: 2px;
+      background: linear-gradient(-45deg, rgba(255, 255, 255, 1), rgba(247, 228, 121, 0.8), transparent);
+      border-radius: 999px;
+      filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
+      animation: shootingArc 2.2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes shootingArc {
+      0% {
+        opacity: 0;
+        width: 0px;
+        transform: translate(0, 0) rotate(25deg) scaleX(0.5);
+      }
+      20% {
+        opacity: 1;
+        width: 120px;
+      }
+      70% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        width: 180px;
+        
+        transform: translate(320px, 180px) rotate(32deg) scaleX(1.2);
+      }
+    }
+
     .firefly {
       position: fixed;
       width: 5px;
@@ -59,7 +93,7 @@
       100% { transform: translate(40px, -60px) scale(1.3); opacity: 1; }
     }
 
-    /* Mariposas animadas */
+    /* Mariposas pros */
     .butterfly-swarm {
       position: fixed;
       top: 0;
@@ -91,7 +125,7 @@
       100% { transform: rotateY(70deg) scale(1.1); }
     }
 
-    /* Contenedor central de la carta */
+    /* centro la carta */
     .content-wrapper {
       position: relative;
       min-height: 100vh;
@@ -103,7 +137,7 @@
       z-index: 10;
     }
 
-    /* Carta compacta y estética */
+    /* Carta */
     .cute-card {
       position: relative;
       width: 100%;
@@ -146,7 +180,6 @@
       line-height: 1.1;
     }
 
-    /* 1. Fuente en Garamond para el mensaje */
     .message-box {
       font-family: 'EB Garamond', Garamond, Georgia, serif;
       font-size: 1.35rem;
@@ -204,7 +237,6 @@
       border-radius: 2px;
     }
 
-    /* 3. Tono amarillo suavizado */
     .flower-head {
       position: relative;
       width: 40px;
@@ -250,7 +282,7 @@
       box-shadow: 0 0 5px rgba(0,0,0,0.4);
     }
 
-    /* 2. Corazones latiendo (#ff0077) más tenues que brillan al latir */
+    /* Corazones latiendo (#ff0077) */
     .beating-heart {
       position: fixed;
       pointer-events: none;
@@ -303,9 +335,9 @@
     <div class="cute-card">
       <div class="card-bg-overlay"></div>
       <div class="card-content">
-        <h1 class="lettering-title">te amo foquita</h1>
+        <h1 class="lettering-title">Te amo Mí Foquita</h1>
         <div class="message-box">
-          mensaje
+          Nuestro primer 21 de septiembre, quizás no juntos (por ahora), como también me hubiese encantado regalarte las flores en persona, pero espero que te guste este pequeño detallito que está hecho con todo mi amor. Te amo mí princesa.
         </div>
       </div>
     </div>
@@ -316,7 +348,7 @@
   </div>
 
   <script>
-    // 1. Fondo estrellado nocturno
+    // Fondo estrellado nocturno
     const starsContainer = document.getElementById('starsContainer');
     for (let i = 0; i < 65; i++) {
       const star = document.createElement('div');
@@ -330,7 +362,39 @@
       starsContainer.appendChild(star);
     }
 
-    // 2. Luciérnagas
+    //ntermitente de Estrellas Fugaces
+    function createShootingStar() {
+      const shootingStar = document.createElement('div');
+      shootingStar.className = 'shooting-star';
+
+      
+      const startX = Math.random() * (window.innerWidth * 0.5) - 50; 
+      const startY = Math.random() * (window.innerHeight * 0.35);
+
+      shootingStar.style.left = startX + 'px';
+      shootingStar.style.top = startY + 'px';
+
+      document.body.appendChild(shootingStar);
+
+      
+      setTimeout(() => {
+        shootingStar.remove();
+      }, 2200);
+    }
+
+    // estrellas fugaces progresivas cada cierto tiempoo
+    function scheduleNextShootingStar() {
+      const nextDelay = Math.random() * 3000 + 2000; 
+      setTimeout(() => {
+        createShootingStar();
+        scheduleNextShootingStar();
+      }, nextDelay);
+    }
+    
+    setTimeout(createShootingStar, 1500);
+    scheduleNextShootingStar();
+
+    // Luciérnagas
     for (let i = 0; i < 20; i++) {
       const f = document.createElement('div');
       f.className = 'firefly';
@@ -341,7 +405,7 @@
       document.body.appendChild(f);
     }
 
-    // 3. Mariposas abundantes
+    // Mariposas 
     const butterflySwarm = document.getElementById('butterflySwarm');
     const totalButterflies = 16;
     const butterfliesData = [];
@@ -393,7 +457,7 @@
     }
     animateButterflies();
 
-    // 4. Cantidad de Flores disminuida ligeramente (35 flores bien distribuidas)
+    // Flores Amarillas jujuu
     const flowerField = document.getElementById('flowerField');
     const totalFlowers = 35; 
 
@@ -437,7 +501,7 @@
       flowerField.appendChild(container);
     }
 
-    // 5. Corazones latiendo dispersos en diversas alturas de la pantalla
+    //Corazones sssssssssssssssssssssssssssssssssss
     const totalHearts = 10;
     for (let h = 0; h < totalHearts; h++) {
       const heart = document.createElement('div');
@@ -447,7 +511,6 @@
       heart.style.width = size + 'px';
       heart.style.height = size + 'px';
 
-      // Posicionamiento más disperso
       heart.style.left = (Math.random() * 88 + 6) + 'vw';
       heart.style.bottom = (Math.random() * 160 + 20) + 'px';
 
