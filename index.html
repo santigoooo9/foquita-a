@@ -6,7 +6,7 @@
   <title>Te amo foquita ❤️</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Great+Vibes&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -18,7 +18,7 @@
       height: 100%;
       overflow-x: hidden;
       font-family: 'Quicksand', sans-serif;
-      background: radial-gradient(circle at 50% 100%, #1a2333 0%, #050811 100%);
+      background: radial-gradient(circle at 50% 100%, #17212e 0%, #050811 100%);
       color: #fff;
     }
 
@@ -47,9 +47,9 @@
       position: fixed;
       width: 5px;
       height: 5px;
-      background: #ffee32;
+      background: #f7e479;
       border-radius: 50%;
-      box-shadow: 0 0 10px #ffee32, 0 0 20px #ffb700;
+      box-shadow: 0 0 10px #f7e479, 0 0 18px #e6a800;
       pointer-events: none;
       z-index: 8;
       animation: floatFirefly linear infinite alternate;
@@ -59,9 +59,7 @@
       100% { transform: translate(40px, -60px) scale(1.3); opacity: 1; }
     }
 
-    /* =========================================================
-       1. MARIPOSAS ANIMADAS Y LIBRES POR TODA LA PÁGINA
-    ========================================================= */
+    /* Mariposas animadas */
     .butterfly-swarm {
       position: fixed;
       top: 0;
@@ -85,7 +83,7 @@
       justify-content: center;
       align-items: center;
       animation: flapWings 0.25s infinite alternate ease-in-out;
-      filter: drop-shadow(0 0 8px rgba(255, 238, 50, 0.8));
+      filter: drop-shadow(0 0 6px rgba(247, 228, 121, 0.7));
     }
 
     @keyframes flapWings {
@@ -113,8 +111,8 @@
       border-radius: 24px;
       padding: 28px 22px;
       background-color: rgba(22, 16, 25, 0.82);
-      border: 2px solid rgba(255, 238, 50, 0.6);
-      box-shadow: 0 12px 35px rgba(255, 238, 50, 0.25), 0 0 25px rgba(255, 0, 119, 0.15);
+      border: 2px solid rgba(247, 228, 121, 0.5);
+      box-shadow: 0 12px 35px rgba(247, 228, 121, 0.2), 0 0 25px rgba(255, 0, 119, 0.1);
       backdrop-filter: blur(10px);
       text-align: center;
       overflow: hidden;
@@ -142,29 +140,28 @@
     .lettering-title {
       font-family: 'Great Vibes', cursive;
       font-size: 3.4rem;
-      color: #ffee32;
-      text-shadow: 0 0 12px rgba(255, 238, 50, 0.9), 0 0 25px rgba(255, 183, 0, 0.6);
+      color: #f7e479;
+      text-shadow: 0 0 10px rgba(247, 228, 121, 0.8), 0 0 20px rgba(230, 168, 0, 0.5);
       margin-bottom: 15px;
       line-height: 1.1;
     }
 
+    /* 1. Fuente en Garamond para el mensaje */
     .message-box {
-      font-family: 'Caveat', cursive;
-      font-size: 1.65rem;
-      line-height: 1.45;
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-size: 1.35rem;
+      line-height: 1.5;
       color: #fffde6;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.85);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
       background: rgba(10, 7, 14, 0.55);
-      padding: 18px 16px;
+      padding: 20px 18px;
       border-radius: 16px;
-      border: 1px dashed rgba(255, 238, 50, 0.6);
+      border: 1px dashed rgba(247, 228, 121, 0.5);
       text-align: left;
       word-wrap: break-word;
     }
 
-    /* =========================================================
-       2. CAMPO Y FLORES AMARILLAS PROTAGONISTAS RADIANTES
-    ========================================================= */
+    /* Campo y flores amarillas */
     .flower-field {
       position: fixed;
       bottom: 0;
@@ -207,15 +204,15 @@
       border-radius: 2px;
     }
 
-    /* Flores amarillas que giran y resaltan intensamente */
+    /* 3. Tono amarillo suavizado */
     .flower-head {
       position: relative;
-      width: 42px;
-      height: 42px;
+      width: 40px;
+      height: 40px;
       margin-bottom: -5px;
       animation: initialSpin 2.5s ease-out forwards, continuousSpin 14s linear infinite 2.5s;
       transform-origin: center center;
-      filter: drop-shadow(0 0 10px rgba(255, 238, 50, 0.85));
+      filter: drop-shadow(0 0 7px rgba(247, 228, 121, 0.65));
     }
 
     @keyframes initialSpin {
@@ -232,12 +229,12 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 15px;
-      height: 23px;
-      background: linear-gradient(to top, #ffb700 0%, #ffee32 70%, #ffffff 100%);
+      width: 14px;
+      height: 22px;
+      background: linear-gradient(to top, #e6b800 0%, #f7e479 70%, #fffdf0 100%);
       border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
       transform-origin: center bottom;
-      box-shadow: 0 0 8px rgba(255, 238, 50, 0.8);
+      box-shadow: 0 0 6px rgba(247, 228, 121, 0.5);
     }
 
     .flower-center {
@@ -245,43 +242,55 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 15px;
-      height: 15px;
-      background: radial-gradient(circle, #ff7700 0%, #993d00 100%);
+      width: 14px;
+      height: 14px;
+      background: radial-gradient(circle, #e67300 0%, #803300 100%);
       border-radius: 50%;
       z-index: 3;
-      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      box-shadow: 0 0 5px rgba(0,0,0,0.4);
     }
 
-    /* =========================================================
-       3. CORAZONES (#ff0077) SUTILES SIN OPACAR
-    ========================================================= */
+    /* 2. Corazones latiendo (#ff0077) más tenues que brillan al latir */
     .beating-heart {
       position: fixed;
       pointer-events: none;
       z-index: 6;
       background-color: #ff0077;
       transform: rotate(-45deg);
-      opacity: 0.65; /* Suave para no opacar el amarillo */
-      box-shadow: 0 0 8px rgba(255, 0, 119, 0.4);
-      animation: heartbeat 1.6s infinite ease-in-out;
+      animation: heartbeatShine 1.8s infinite ease-in-out;
     }
     .beating-heart::before, .beating-heart::after {
       content: "";
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: #ff0077;
+      background-color: inherit;
       border-radius: 50%;
     }
     .beating-heart::before { top: -50%; left: 0; }
     .beating-heart::after { left: 50%; top: 0; }
 
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1) rotate(-45deg); }
-      25% { transform: scale(1.15) rotate(-45deg); }
-      40% { transform: scale(0.95) rotate(-45deg); }
-      60% { transform: scale(1.1) rotate(-45deg); }
+    @keyframes heartbeatShine {
+      0%, 100% {
+        transform: scale(1) rotate(-45deg);
+        opacity: 0.35;
+        box-shadow: 0 0 2px rgba(255, 0, 119, 0.2);
+      }
+      25% {
+        transform: scale(1.22) rotate(-45deg);
+        opacity: 0.75;
+        box-shadow: 0 0 12px #ff0077, 0 0 22px rgba(255, 0, 119, 0.8);
+      }
+      40% {
+        transform: scale(0.95) rotate(-45deg);
+        opacity: 0.3;
+        box-shadow: 0 0 2px rgba(255, 0, 119, 0.2);
+      }
+      60% {
+        transform: scale(1.12) rotate(-45deg);
+        opacity: 0.65;
+        box-shadow: 0 0 8px #ff0077, 0 0 16px rgba(255, 0, 119, 0.6);
+      }
     }
   </style>
 </head>
@@ -321,7 +330,7 @@
       starsContainer.appendChild(star);
     }
 
-    // 2. Luciérnagas doradas
+    // 2. Luciérnagas
     for (let i = 0; i < 20; i++) {
       const f = document.createElement('div');
       f.className = 'firefly';
@@ -332,7 +341,7 @@
       document.body.appendChild(f);
     }
 
-    // 3. Mariposas abundantes con movimiento flotante y libre
+    // 3. Mariposas abundantes
     const butterflySwarm = document.getElementById('butterflySwarm');
     const totalButterflies = 16;
     const butterfliesData = [];
@@ -344,9 +353,8 @@
       const wings = document.createElement('div');
       wings.className = 'butterfly-wings-wrapper';
       
-      // Tono de mariposa dorado/rosa suave
-      const color1 = i % 2 === 0 ? '#ffee32' : '#ff9ebb';
-      const color2 = i % 2 === 0 ? '#ffb700' : '#ffffee';
+      const color1 = i % 2 === 0 ? '#f7e479' : '#ff9ebb';
+      const color2 = i % 2 === 0 ? '#e6b800' : '#ffffee';
 
       wings.innerHTML = `
         <svg width="26" height="24" viewBox="0 0 24 24" fill="none">
@@ -358,7 +366,6 @@
       unit.appendChild(wings);
       butterflySwarm.appendChild(unit);
 
-      // Datos de movimiento aleatorio individual
       butterfliesData.push({
         el: unit,
         x: Math.random() * window.innerWidth,
@@ -369,13 +376,11 @@
       });
     }
 
-    // Animación continua mediante JS para trayectorias orgánicas sin patrones
     function animateButterflies() {
       butterfliesData.forEach(b => {
         b.x += b.vx + Math.sin(Date.now() * 0.002 + b.x) * 0.5;
         b.y += b.vy + Math.cos(Date.now() * 0.002 + b.y) * 0.5;
 
-        // Rebotar o reaparecer en los bordes
         if (b.x < -30) b.x = window.innerWidth + 20;
         if (b.x > window.innerWidth + 30) b.x = -20;
         if (b.y < -30) b.y = window.innerHeight + 20;
@@ -388,9 +393,9 @@
     }
     animateButterflies();
 
-    // 4. Campo de Flores Amarillas (Cantidad reducida y perfecta para resaltar)
+    // 4. Cantidad de Flores disminuida ligeramente (35 flores bien distribuidas)
     const flowerField = document.getElementById('flowerField');
-    const totalFlowers = 42; 
+    const totalFlowers = 35; 
 
     for (let i = 0; i < totalFlowers; i++) {
       const container = document.createElement('div');
@@ -399,14 +404,12 @@
       const leftPos = (i / totalFlowers) * 104 - 2 + (Math.random() * 2 - 1);
       container.style.left = leftPos + '%';
 
-      // Altura equilibrada
       const height = Math.floor(Math.random() * 65) + 40; 
       const scale = 0.75 + (height / 105) * 0.45;
 
       container.style.zIndex = Math.floor(height) + 2;
       container.style.animationDelay = (Math.random() * 1.4) + 's';
 
-      // Cabeza de la flor amarilla brillante
       const flowerHead = document.createElement('div');
       flowerHead.className = 'flower-head';
       flowerHead.style.transform = `scale(${scale})`;
@@ -426,7 +429,6 @@
 
       container.appendChild(flowerHead);
 
-      // Tallo disimulado
       const stem = document.createElement('div');
       stem.className = 'stem';
       stem.style.height = height + 'px';
@@ -435,20 +437,21 @@
       flowerField.appendChild(container);
     }
 
-    // 5. Corazones latiendo (#ff0077) sutiles y distribuidos
-    const totalHearts = 9;
+    // 5. Corazones latiendo dispersos en diversas alturas de la pantalla
+    const totalHearts = 10;
     for (let h = 0; h < totalHearts; h++) {
       const heart = document.createElement('div');
       heart.className = 'beating-heart';
       
-      const size = Math.floor(Math.random() * 6) + 10; // De 10px a 16px
+      const size = Math.floor(Math.random() * 6) + 10;
       heart.style.width = size + 'px';
       heart.style.height = size + 'px';
 
-      heart.style.left = (Math.random() * 90 + 5) + 'vw';
-      heart.style.bottom = (Math.random() * 110 + 25) + 'px';
+      // Posicionamiento más disperso
+      heart.style.left = (Math.random() * 88 + 6) + 'vw';
+      heart.style.bottom = (Math.random() * 160 + 20) + 'px';
 
-      heart.style.animationDelay = (Math.random() * 1.5) + 's';
+      heart.style.animationDelay = (Math.random() * 2) + 's';
       document.body.appendChild(heart);
     }
   </script>
